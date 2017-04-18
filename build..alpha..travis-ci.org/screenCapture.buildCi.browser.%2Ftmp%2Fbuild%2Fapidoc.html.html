@@ -1,0 +1,379 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/wddqing/node-http-proxy">node-http-proxy (v0.2.3)</a>
+</h1>
+<h4>a http(s) proxy server </h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-http-proxy">module node-http-proxy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-http-proxy.proxyMaster">
+            function <span class="apidocSignatureSpan">node-http-proxy.</span>proxyMaster
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-http-proxy.proxyMaster.prototype.start">
+            function <span class="apidocSignatureSpan">node-http-proxy.</span>proxyMaster.prototype.start
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-http-proxy.proxyMaster.prototype.stop">
+            function <span class="apidocSignatureSpan">node-http-proxy.</span>proxyMaster.prototype.stop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-http-proxy.</span>proxyMaster.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-http-proxy.proxyMaster">module node-http-proxy.proxyMaster</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-http-proxy.proxyMaster.proxyMaster">
+            function <span class="apidocSignatureSpan">node-http-proxy.</span>proxyMaster
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-http-proxy.proxyMaster.prototype">module node-http-proxy.proxyMaster.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-http-proxy.proxyMaster.prototype.start">
+            function <span class="apidocSignatureSpan">node-http-proxy.proxyMaster.prototype.</span>start
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-http-proxy.proxyMaster.prototype.stop">
+            function <span class="apidocSignatureSpan">node-http-proxy.proxyMaster.prototype.</span>stop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-http-proxy.proxyMaster.prototype.start">module node-http-proxy.proxyMaster.prototype.start</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-http-proxy.proxyMaster.prototype.start.start">
+            function <span class="apidocSignatureSpan">node-http-proxy.proxyMaster.prototype.</span>start
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-http-proxy.proxyMaster.prototype.stop">module node-http-proxy.proxyMaster.prototype.stop</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-http-proxy.proxyMaster.prototype.stop.stop">
+            function <span class="apidocSignatureSpan">node-http-proxy.proxyMaster.prototype.</span>stop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-http-proxy" id="apidoc.module.node-http-proxy">module node-http-proxy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-http-proxy.proxyMaster" id="apidoc.element.node-http-proxy.proxyMaster">
+        function <span class="apidocSignatureSpan">node-http-proxy.</span>proxyMaster
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function proxyMaster(options){
+    this._options = options || {};
+    this._app = pm.createMaster({
+        'pidfile' : '/tmp/node-proxy-server.pid'
+    })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-http-proxy.proxyMaster.prototype.start" id="apidoc.element.node-http-proxy.proxyMaster.prototype.start">
+        function <span class="apidocSignatureSpan">node-http-proxy.</span>proxyMaster.prototype.start
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">proxyMaster.prototype.start = function (){
+    var options = this._options
+
+    this._app.register('proxy-server',__dirname + '/proxy-server.js', {
+        listen : options.port || 8234,
+        children: options.instance || 1
+    },process.argv)
+
+    this._app.on('giveup', function (name, num, pause) {
+        console.log('giveup', name, num, pause)
+    })
+
+    this._app.dispatch()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-http-proxy.proxyMaster.prototype.stop" id="apidoc.element.node-http-proxy.proxyMaster.prototype.stop">
+        function <span class="apidocSignatureSpan">node-http-proxy.</span>proxyMaster.prototype.stop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">proxyMaster.prototype.stop = function (){
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-http-proxy.proxyMaster" id="apidoc.module.node-http-proxy.proxyMaster">module node-http-proxy.proxyMaster</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-http-proxy.proxyMaster.proxyMaster" id="apidoc.element.node-http-proxy.proxyMaster.proxyMaster">
+        function <span class="apidocSignatureSpan">node-http-proxy.</span>proxyMaster
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function proxyMaster(options){
+    this._options = options || {};
+    this._app = pm.createMaster({
+        'pidfile' : '/tmp/node-proxy-server.pid'
+    })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-http-proxy.proxyMaster.prototype" id="apidoc.module.node-http-proxy.proxyMaster.prototype">module node-http-proxy.proxyMaster.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-http-proxy.proxyMaster.prototype.start" id="apidoc.element.node-http-proxy.proxyMaster.prototype.start">
+        function <span class="apidocSignatureSpan">node-http-proxy.proxyMaster.prototype.</span>start
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">start = function (){
+    var options = this._options
+
+    this._app.register('proxy-server',__dirname + '/proxy-server.js', {
+        listen : options.port || 8234,
+        children: options.instance || 1
+    },process.argv)
+
+    this._app.on('giveup', function (name, num, pause) {
+        console.log('giveup', name, num, pause)
+    })
+
+    this._app.dispatch()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## Use in code
+```javascript
+var ProxyMaster = require('node-http-proxy').proxyMaster;
+
+var proxymaster = new ProxyMaster({instance:1,port:8123});
+
+proxymaster.<span class="apidocCodeKeywordSpan">start</span>();
+```
+
+
+## Useage
+```bash
+$curl -x 127.0.0.1:9999 http://www.google.com/
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-http-proxy.proxyMaster.prototype.stop" id="apidoc.element.node-http-proxy.proxyMaster.prototype.stop">
+        function <span class="apidocSignatureSpan">node-http-proxy.proxyMaster.prototype.</span>stop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stop = function (){
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-http-proxy.proxyMaster.prototype.start" id="apidoc.module.node-http-proxy.proxyMaster.prototype.start">module node-http-proxy.proxyMaster.prototype.start</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-http-proxy.proxyMaster.prototype.start.start" id="apidoc.element.node-http-proxy.proxyMaster.prototype.start.start">
+        function <span class="apidocSignatureSpan">node-http-proxy.proxyMaster.prototype.</span>start
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">start = function (){
+    var options = this._options
+
+    this._app.register('proxy-server',__dirname + '/proxy-server.js', {
+        listen : options.port || 8234,
+        children: options.instance || 1
+    },process.argv)
+
+    this._app.on('giveup', function (name, num, pause) {
+        console.log('giveup', name, num, pause)
+    })
+
+    this._app.dispatch()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## Use in code
+```javascript
+var ProxyMaster = require('node-http-proxy').proxyMaster;
+
+var proxymaster = new ProxyMaster({instance:1,port:8123});
+
+proxymaster.<span class="apidocCodeKeywordSpan">start</span>();
+```
+
+
+## Useage
+```bash
+$curl -x 127.0.0.1:9999 http://www.google.com/
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-http-proxy.proxyMaster.prototype.stop" id="apidoc.module.node-http-proxy.proxyMaster.prototype.stop">module node-http-proxy.proxyMaster.prototype.stop</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-http-proxy.proxyMaster.prototype.stop.stop" id="apidoc.element.node-http-proxy.proxyMaster.prototype.stop.stop">
+        function <span class="apidocSignatureSpan">node-http-proxy.proxyMaster.prototype.</span>stop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stop = function (){
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
