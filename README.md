@@ -1,4 +1,7 @@
-# api documentation for  [node-http-proxy (v0.2.3)](https://github.com/wddqing/node-http-proxy)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-http-proxy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-http-proxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-http-proxy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-http-proxy)
+# npmdoc-node-http-proxy
+
+#### basic api documentation for  [node-http-proxy (v0.2.3)](https://github.com/wddqing/node-http-proxy)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-http-proxy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-http-proxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-http-proxy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-http-proxy)
+
 #### a http(s) proxy server
 
 [![NPM](https://nodei.co/npm/node-http-proxy.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/node-http-proxy)
